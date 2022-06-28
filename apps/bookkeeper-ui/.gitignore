@@ -1,0 +1,5 @@
+# Service worker
+sw.*
+
+# Vim swap files
+*.swp
