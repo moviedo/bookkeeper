@@ -2,7 +2,12 @@
 
 Bookkeeping app for determining monthly cost between multiple parties.
 
-## What's inside?
+- [What's inside?](#info)
+- [Setup](#setup)
+- [Commit Convention Rules](#commit)
+- [Useful Links](#links)
+
+## <a id="info"></a> What's inside?
 
 This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
 
@@ -13,7 +18,7 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-## Setup
+## <a id="setup"></a> Setup
 
 Install dependencies:
 ```
@@ -44,7 +49,55 @@ To build all apps and packages, run the following command:
 npm run build
 ```
 
-## Useful Links
+
+## <a id="commit"></a> Commit Convention Rules
+
+Structure of commit messages
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+Example commit message:
+```
+git commit -m "feat(component): add ix-btn component"
+git commit -m "fix(util): fix xhr logic issue with network.save"
+git commit -m "style: add commit convention type/scope rules"
+```
+
+Example breaking change commit message:
+```
+git commit -m "feat(component): change api for ix-btn component
+
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files"
+```
+
+### Major, Minor, Patch
+
+The commit contains the following structural elements, to communicate intent to the consumers of your library:
+
+1. fix: a commit of the type fix patches a bug in your codebase (this correlates with PATCH in Semantic Versioning).
+1. feat: a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning).
+1. BREAKING CHANGE: a commit that has a footer BREAKING CHANGE:, or appends a ! after the type/scope, introduces a breaking API change (correlating with MAJOR in Semantic Versioning).
+
+### Types
+
+Commit messages must be one of the following:
+
+    build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+    ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+    docs: Documentation only changes
+    feat: A new feature
+    fix: A bug fix
+    perf: A code change that improves performance
+    refactor: A code change that neither fixes a bug nor adds a feature
+    style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+    test: Adding missing tests or correcting existing tests
+
+## <a id="links"></a> Useful Links
 
 Learn more about the power of Turborepo:
 
