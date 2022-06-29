@@ -6,8 +6,8 @@
     "dev": "node ace serve --watch",
     "build": "node ace build --production",
     "start": "node server.js",
-    "lint": "eslint . --ext \".ts\" --ignore-path ../../.gitignore .",
-    "lint:fix": "eslint --ext \".ts\" --fix --ignore-path ../../.gitignore",
+    "lint": "eslint . --ext .js,.ts --ignore-path ../../.gitignore .",
+    "lint:fix": "eslint --ext .js,.ts --fix --ignore-path ../../.gitignore",
     "format": "prettier --write ."
   },
   "devDependencies": {
@@ -31,5 +31,8 @@
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.21"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "npm run lint:fix"
   }
 }

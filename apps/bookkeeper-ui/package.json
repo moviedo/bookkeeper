@@ -22,5 +22,8 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^10.0.0",
     "eslint": "^8.18.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "npm run lint:fix"
   }
 }
