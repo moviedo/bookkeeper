@@ -15,15 +15,12 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ## Setup
 
-Install dependencies
-
-### Build
-
-To build all apps and packages, run the following command:
-
+Install dependencies:
 ```
-npm run build
+npm i
 ```
+
+Make sure to use the correct node and npm versions as specified in the top-level package.json. You can also use `nvm use` if using NVM for node management.
 
 ### Develop
 
@@ -31,6 +28,20 @@ To develop all apps and packages, run the following command:
 
 ```
 npm run dev
+```
+
+To develop specific apps, run the following command:
+
+```
+npm run -w bookkeeper-ui dev
+```
+
+### Build
+
+To build all apps and packages, run the following command:
+
+```
+npm run build
 ```
 
 ## Useful Links
