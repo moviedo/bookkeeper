@@ -88,6 +88,7 @@ The commit contains the following structural elements, to communicate intent to 
 Commit messages must be one of the following:
 
     build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+    chore: miscellaneous(setting up eslint, stylelint, etc)
     ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
     docs: Documentation only changes
     feat: A new feature
