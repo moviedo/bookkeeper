@@ -20,23 +20,34 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ## <a id="setup"></a> Setup
 
-Install dependencies:
-```
-npm i
-```
+### Pre-requistes
+Install nodejs, [make](https://formulae.brew.sh/formula/make#default) and [docker desktop](https://www.docker.com/products/docker-desktop).
+
+Optional instructions to install make 3.82
+  1. Install through [brew](https://brew.sh/)
+  1. Install make, `brew install make`
 
 Make sure to use the correct node and npm versions as specified in the top-level package.json. You can also use `nvm use` if using NVM for node management.
 
+Install dependencies and setup docker postgres container:
+```
+make setup
+```
+
 ### Develop
 
-To develop all apps and packages, run the following command:
+Run `make start` to start the docker containers for postgres and adminer.
 
+Run `make stop` to stop the docker containers.
+
+Run `make help` for all available command options.
+
+To develop all apps and packages, run the following command:
 ```
 npm run dev
 ```
 
 To develop specific apps, run the following command:
-
 ```
 npm run -w bookkeeper-ui dev
 ```
