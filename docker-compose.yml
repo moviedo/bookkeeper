@@ -1,5 +1,11 @@
 version: '3.9'
 services:
+  cache:
+    image: 'redis:7-alpine'
+    container_name: bookkeeper_cache
+    restart: always
+    ports:
+      - '6379:6379'
   db:
     image: 'postgres:14-alpine'
     container_name: bookkeeper_db
@@ -14,6 +20,8 @@ services:
       test: ['CMD', 'pg_isready', '-q', '-d', 'bookkeeper', '-U', 'postgres']
       retries: 3
       timeout: 5s
+    ports:
+      - '5432:5432'
   adminer:
     image: adminer
     container_name: bookkeeper_adminer 
