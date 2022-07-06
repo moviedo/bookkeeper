@@ -1,6 +1,13 @@
+import Database from '@ioc:Adonis/Lucid/Database'
+import UserFactory from 'Database/factories/UserFactory'
 import { test } from '@japa/runner'
 
-test.group('Auth login', () => {
+test.group('Auth login', (group) => {
+  group.each.setup(async () => {
+    await Database.beginGlobalTransaction()
+    return () => Database.rollbackGlobalTransaction()
+  })
+
   test('api exists', async ({ client }) => {
     const response = await client.post('api/auth/login').form({
       username: 'test101',
@@ -14,5 +21,16 @@ test.group('Auth login', () => {
         },
       ],
     })
+  })
+
+  test('authenticate user', async ({ client }) => {
+    const user = await UserFactory.create()
+
+    const response = await client.post('api/auth/login').form({
+      username: user.username,
+      password: user.password,
+    })
+    response.assertStatus(200)
+    response.assert?.properties(response.body(), ['token', 'type'])
   })
 })
