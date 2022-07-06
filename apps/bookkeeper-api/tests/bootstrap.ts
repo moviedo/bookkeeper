@@ -6,6 +6,7 @@
  */
 
 import type { Config } from '@japa/runner'
+import Hash from '@ioc:Adonis/Core/Hash'
 import TestUtils from '@ioc:Adonis/Core/TestUtils'
 import { assert, runFailedTests, specReporter, apiClient } from '@japa/preset-adonis'
 
@@ -47,8 +48,8 @@ export const reporters: Config['reporters'] = [specReporter()]
 |
 */
 export const runnerHooks: Required<Pick<Config, 'setup' | 'teardown'>> = {
-  setup: [() => TestUtils.ace().loadCommands()],
-  teardown: [],
+  setup: [() => TestUtils.ace().loadCommands(), () => TestUtils.db().migrate(), () => Hash.fake()],
+  teardown: [() => Hash.restore()],
 }
 
 /*
