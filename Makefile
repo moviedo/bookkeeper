@@ -9,8 +9,9 @@
 setup:
 	@npm i && \
 	cat apps/bookkeeper-api/.env.example > "apps/bookkeeper-api/.env" && \
-	echo "NODE_ENV=test\nPG_PORT=5433" > "apps/bookkeeper-api/.env.test" && \
-	make start 
+	echo "NODE_ENV=test\nPG_DB_NAME=bookkeeper_test" > "apps/bookkeeper-api/.env.test" && \
+	make start && \
+	node apps/bookkeeper-api/ace create:db bookkeeper_test
 
 ## start development environment with docker-compose
 start: 
