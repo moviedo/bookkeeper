@@ -1,4 +1,5 @@
 import Database from '@ioc:Adonis/Lucid/Database'
+import User from 'App/Models/User'
 import UserFactory from 'Database/factories/UserFactory'
 import { test } from '@japa/runner'
 
@@ -21,7 +22,7 @@ test.group('Auth logout', (group) => {
   })
 
   test('revoke user', async ({ client }) => {
-    const user = await UserFactory.create()
+    const user: User = await UserFactory.create()
     const response = await client.post('api/auth/logout').loginAs(user)
     response.assertStatus(200)
     response.assertBody({ revoked: true })
