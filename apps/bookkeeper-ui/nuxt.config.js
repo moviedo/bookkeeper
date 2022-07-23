@@ -33,6 +33,8 @@ export default {
   buildModules: [
     // https://github.com/nuxt/postcss8
     "@nuxt/postcss8",
+    // https://go.nuxtjs.dev/stylelint
+    "@nuxtjs/stylelint-module",
     // https://github.com/nuxt-community/svg-module#nuxtjssvg
     "@nuxtjs/svg",
     // https://go.nuxtjs.dev/typescript
@@ -62,4 +64,7 @@ export default {
   storybook: {
     addons: ["storybook-addon-pseudo-states"],
   },
+
+  // Stylelint Configuration: https://github.com/nuxt-community/stylelint-module#options
+  stylelint: {},
 };
