@@ -33,6 +33,8 @@ export default {
   buildModules: [
     // https://github.com/nuxt/postcss8
     "@nuxt/postcss8",
+    // https://github.com/nuxt-community/svg-module#nuxtjssvg
+    "@nuxtjs/svg",
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
   ],
@@ -54,5 +56,10 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+
+  // Storybook Configuration: https://storybook.nuxtjs.org/api/options
+  storybook: {
+    addons: ["storybook-addon-pseudo-states"],
   },
 };

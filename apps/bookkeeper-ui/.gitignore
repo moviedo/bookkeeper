@@ -3,3 +3,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Nuxt Storybook
+.nuxt-storybook
