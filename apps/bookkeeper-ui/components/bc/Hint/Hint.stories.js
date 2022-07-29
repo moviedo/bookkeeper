@@ -2,12 +2,10 @@ export default {
   title: "base components / bc-hint",
 };
 
-const Template = (args, { argTypes }) => {
-  return {
-    props: Object.keys(argTypes),
-    template: `<bc-hint v-bind="$props">${args.text ?? ""}</bc-hint>`,
-  };
-};
+const Template = (_args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  template: '<bc-hint v-bind="$props">{{$props.slot}}</bc-hint>',
+});
 
 export const Default = () => ({
   template: `
@@ -21,11 +19,11 @@ export const Default = () => ({
 export const Error = Template.bind({});
 Error.args = {
   type: "error",
-  text: "Some hint to user",
+  slot: "Some hint to user",
 };
 
 export const Warning = Template.bind({});
 Warning.args = {
   type: "warning",
-  text: "Some hint to user",
+  slot: "Some hint to user",
 };

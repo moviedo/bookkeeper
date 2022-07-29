@@ -1,35 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`base components / bc-input Default smoke-test 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
 exports[`base components / bc-input Default smoke-test 2`] = `
 <input data-v-1a110ac2
        type="text"
        class="default hover focus"
        placeholder="default data"
->
-`;
-
-exports[`base components / bc-input Default smoke-test: base-components-bc-input--default 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
-exports[`base components / bc-input Disabled smoke-test 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
-       disabled="disabled"
 >
 `;
 
@@ -42,43 +17,7 @@ exports[`base components / bc-input Disabled smoke-test 2`] = `
 >
 `;
 
-exports[`base components / bc-input Disabled smoke-test: base-components-bc-input--disabled 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
-       disabled="disabled"
->
-`;
-
-exports[`base components / bc-input ErrorDefault smoke-test 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
-       errored="true"
->
-`;
-
 exports[`base components / bc-input ErrorDefault smoke-test 2`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
-       errored="true"
->
-`;
-
-exports[`base components / bc-input ErrorDefault smoke-test: base-components-bc-input--error-default 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
-       errored="true"
->
-`;
-
-exports[`base components / bc-input ErrorFocus smoke-test 1`] = `
 <input data-v-1a110ac2
        type="text"
        class="default hover focus"
@@ -96,40 +35,7 @@ exports[`base components / bc-input ErrorFocus smoke-test 2`] = `
 >
 `;
 
-exports[`base components / bc-input ErrorFocus smoke-test: base-components-bc-input--error-focus 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
-       errored="true"
->
-`;
-
-exports[`base components / bc-input Focus smoke-test 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
 exports[`base components / bc-input Focus smoke-test 2`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
-exports[`base components / bc-input Focus smoke-test: base-components-bc-input--focus 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
-exports[`base components / bc-input Hover smoke-test 1`] = `
 <input data-v-1a110ac2
        type="text"
        class="default hover focus"
@@ -145,22 +51,6 @@ exports[`base components / bc-input Hover smoke-test 2`] = `
 >
 `;
 
-exports[`base components / bc-input Hover smoke-test: base-components-bc-input--hover 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
-exports[`base components / bc-input Mobile smoke-test 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
 exports[`base components / bc-input Mobile smoke-test 2`] = `
 <input data-v-1a110ac2
        type="text"
@@ -169,31 +59,7 @@ exports[`base components / bc-input Mobile smoke-test 2`] = `
 >
 `;
 
-exports[`base components / bc-input Mobile smoke-test: base-components-bc-input--mobile 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
-exports[`base components / bc-input Tablet smoke-test 1`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
 exports[`base components / bc-input Tablet smoke-test 2`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
-exports[`base components / bc-input Tablet smoke-test: base-components-bc-input--tablet 1`] = `
 <input data-v-1a110ac2
        type="text"
        class="default hover focus"
