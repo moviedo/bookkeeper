@@ -4,10 +4,11 @@ Bookkeeping app for determining monthly cost between multiple parties.
 
 - [What's inside?](#info)
 - [Setup](#setup)
+- [Testing](#testing)
 - [Commit Convention Rules](#commit)
 - [Useful Links](#links)
 
-## <a id="info"></a> What's inside?
+<h2 id="info">What's inside?</h2> 
 
 This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
 
@@ -18,7 +19,7 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-## <a id="setup"></a> Setup
+<h2 id="setup">Setup</h2>
 
 ### Pre-requistes
 Install nodejs, [make](https://formulae.brew.sh/formula/make#default) and [docker desktop](https://www.docker.com/products/docker-desktop).
@@ -34,7 +35,7 @@ Install dependencies and setup docker postgres container:
 make setup
 ```
 
-### Develop
+### Commands
 
 Run `make start` to start the docker containers for postgres and adminer.
 
@@ -52,16 +53,37 @@ To develop specific apps, run the following command:
 npm run -w bookkeeper-ui dev
 ```
 
-### Build
-
 To build all apps and packages, run the following command:
 
 ```
 npm run build
 ```
 
+<h2 id="testing">Testing</h2>
 
-## <a id="commit"></a> Commit Convention Rules
+How to test the different apps and what types of tests are used.
+
+### Frontend
+
+We use [storybook](https://storybook.js.org/docs/vue/get-started/introduction) for component driven development.
+use the following command to run storybook and view your componenent stories.
+```
+npm run -w bookkeeper-ui storybook 
+```
+
+Visual tests capture a screenshot of every story then compares it against baselines to detect appearance and integration issues.
+
+Snapshot tests detect changes in the rendered markup to surface rendering errors or warnings.
+
+To run both snapshot and visual tests use the following command while running storybook in a separate terminal:
+```
+npm run -w bookkeeper-ui storybook:test 
+```
+
+### Backend
+TODO
+
+<h2 id="commit">Commit Convention Rules</h2>
 
 Structure of commit messages
 ```
@@ -109,7 +131,8 @@ Commit messages must be one of the following:
     style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
     test: Adding missing tests or correcting existing tests
 
-## <a id="links"></a> Useful Links
+
+<h2 id="links">Useful Links</h2>
 
 Learn more about the power of Turborepo:
 
@@ -119,3 +142,4 @@ Learn more about the power of Turborepo:
 - [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
 - [Configuration Options](https://turborepo.org/docs/reference/configuration)
 - [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+- [Storybook Testing](https://storybook.js.org/docs/vue/writing-tests/test-runner)

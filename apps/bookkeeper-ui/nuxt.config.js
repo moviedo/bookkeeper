@@ -62,6 +62,7 @@ export default {
 
   // Storybook Configuration: https://storybook.nuxtjs.org/api/options
   storybook: {
+    port: 6006,
     addons: ["storybook-addon-pseudo-states"],
   },
 

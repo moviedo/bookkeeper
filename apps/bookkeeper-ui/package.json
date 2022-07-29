@@ -13,7 +13,8 @@
     "lint:style:fix": "stylelint \"**/*.{vue,css}\" --ignore-path ../../.gitignore --fix",
     "lint": "npm run lint:js",
     "lint:fix": "npm run lint:js:fix && npm run lint:style:fix",
-    "storybook": "npx nuxt storybook"
+    "storybook": "npx nuxt storybook",
+    "storybook:test": "test-storybook --config-dir .nuxt-storybook/storybook"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -28,10 +29,12 @@
     "@nuxtjs/storybook": "^4.3.2",
     "@nuxtjs/stylelint-module": "^4.1.0",
     "@nuxtjs/svg": "^0.4.0",
+    "@storybook/test-runner": "^0.5.0",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jest-image-snapshot": "^5.1.0",
     "postcss": "^8.4.14",
     "postcss-html": "^1.5.0",
     "prettier": "^2.7.0",

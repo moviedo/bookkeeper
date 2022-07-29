@@ -1,0 +1,23 @@
+const { toMatchImageSnapshot } = require('jest-image-snapshot');
+
+const customSnapshotsDir = `${process.cwd()}/__snapshots__`;
+
+module.exports = {
+  setup() {
+    expect.extend({ toMatchImageSnapshot });
+  },
+  async postRender(page, context) {
+    // Image snapshot
+    const image = await page.screenshot();
+    expect(image).toMatchImageSnapshot({
+      customSnapshotsDir,
+      customSnapshotIdentifier: context.id,
+    });
+
+    // DOM snapshot
+    const elementHandler = await page.$('#root');
+    const innerHTML = await elementHandler.innerHTML();
+    console.log('innerHTML', innerHTML)
+    expect(innerHTML).toMatchSnapshot();
+  },
+};
