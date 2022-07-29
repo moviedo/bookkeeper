@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,vagrant,storybookjs
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,linux,macos,windows,vagrant,storybookjs
+# Created by https://www.toptal.com/developers/gitignore/api/node,linux,macos,vagrant,windows,storybookjs,vim
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,linux,macos,vagrant,windows,storybookjs,vim
 
 ### Linux ###
 *~
@@ -205,6 +205,26 @@ storybook-static/
 ### Vagrant Patch ###
 *.box
 
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -231,4 +251,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,vagrant,storybookjs
+# End of https://www.toptal.com/developers/gitignore/api/node,linux,macos,vagrant,windows,storybookjs,vim
