@@ -17,7 +17,6 @@ module.exports = {
     // DOM snapshot
     const elementHandler = await page.$('#root');
     const innerHTML = await elementHandler.innerHTML();
-    console.log('innerHTML', innerHTML)
     expect(innerHTML).toMatchSnapshot();
   },
 };
