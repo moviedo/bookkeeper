@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`grouped components / gc-labeled-input Default smoke-test 2`] = `
+<fieldset>
+  <bc-lable for="username"
+            class="pl-px"
+  >
+    Username
+  </bc-lable>
+  <input data-v-1a110ac2
+         type="text"
+         class="default hover focus my-2"
+         id="username"
+         name="username"
+         placeholder="Username"
+  >
+  <p data-v-0195b81e
+     class="text-sm font-normal pl-px error"
+  >
+    <svg data-v-0195b81e
+         xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 20 20"
+         fill="currentColor"
+         aria-hidden="true"
+         class="inline h-5 w-5 pr-1"
+         style="display: none;"
+    >
+      <path data-v-0195b81e
+            fill-rule="evenodd"
+            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+            clip-rule="evenodd"
+      >
+      </path>
+    </svg>
+    <span data-v-0195b81e>
+    </span>
+  </p>
+</fieldset>
+`;
+
+exports[`grouped components / gc-labeled-input WithHint smoke-test 2`] = `
+<fieldset>
+  <bc-lable for="username"
+            class="pl-px"
+  >
+    Username
+  </bc-lable>
+  <input data-v-1a110ac2
+         type="text"
+         class="default hover focus my-2"
+         id="username"
+         name="username"
+         placeholder="Username"
+  >
+  <p data-v-0195b81e
+     class="text-sm font-normal pl-px error"
+  >
+    <svg data-v-0195b81e
+         xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 20 20"
+         fill="currentColor"
+         aria-hidden="true"
+         class="inline h-5 w-5 pr-1"
+         style
+    >
+      <path data-v-0195b81e
+            fill-rule="evenodd"
+            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+            clip-rule="evenodd"
+      >
+      </path>
+    </svg>
+    <span data-v-0195b81e>
+      Password is not available.
+    </span>
+  </p>
+</fieldset>
+`;
