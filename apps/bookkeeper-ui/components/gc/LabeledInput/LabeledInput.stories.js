@@ -1,17 +1,22 @@
 export default {
   title: "grouped components / gc-labeled-input",
+  argTypes: {
+    hintSlot: {
+      control: { type: "text" },
+    },
+  },
 };
 
-const Template = (_args, { argTypes }) => ({
+const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   template: `
   <gc-labeled-input v-bind="$props.$attrs">
-    <template #label v-if="$props.labelSlot">
-      {{$props.labelSlot}}
+    <template #label>
+      ${args.labelSlot}
     </template>
 
-    <template #hint v-if="$props.hintSlot">
-      {{$props.hintSlot}}
+    <template #hint v-if="${"hintSlot" in args}">
+      ${args.hintSlot}
     </template>
   </gc-labeled-input>`,
 });
