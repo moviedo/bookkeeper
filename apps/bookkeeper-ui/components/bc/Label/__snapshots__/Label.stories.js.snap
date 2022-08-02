@@ -5,3 +5,12 @@ exports[`base components / bc-label Default smoke-test 2`] = `
   Input Label
 </label>
 `;
+
+exports[`base components / bc-label WithCustomHtml smoke-test 2`] = `
+<label class="text-base font-normal text-slate-600">
+  <strong>
+    Strong Label
+  </strong>
+  : with normal label
+</label>
+`;
