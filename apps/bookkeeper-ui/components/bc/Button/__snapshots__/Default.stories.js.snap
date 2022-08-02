@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`base components / bc-button / default Default smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+>
+  Submit
+</button>
+`;
+
+exports[`base components / bc-button / default Large smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+        large="true"
+>
+  Submit
+</button>
+`;
+
+exports[`base components / bc-button / default Mobile smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+>
+  Submit
+</button>
+`;
+
+exports[`base components / bc-button / default Small smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+        small="true"
+>
+  Submit
+</button>
+`;
+
+exports[`base components / bc-button / default Tablet smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+>
+  Submit
+</button>
+`;
+
+exports[`base components / bc-button / default WithCustomHtml smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+>
+  <i data-v-85cb8f92>
+    Submit
+  </i>
+  normal copy
+</button>
+`;

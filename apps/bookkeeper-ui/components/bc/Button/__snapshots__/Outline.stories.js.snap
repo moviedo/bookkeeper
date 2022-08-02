@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`base components / bc-button / outlined Default smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+        outline="true"
+>
+  Submit
+</button>
+`;
+
+exports[`base components / bc-button / outlined Disabled smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+        outline="true"
+        disabled="disabled"
+>
+  Submit
+</button>
+`;
+
+exports[`base components / bc-button / outlined Focus smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+        outline="true"
+>
+  Submit
+</button>
+`;
+
+exports[`base components / bc-button / outlined Hover smoke-test 2`] = `
+<button data-v-85cb8f92
+        class="default hover focus active"
+        outline="true"
+>
+  Submit
+</button>
+`;
