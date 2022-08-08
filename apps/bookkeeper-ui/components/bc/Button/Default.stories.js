@@ -1,5 +1,32 @@
 export default {
   title: "base components / bc-button / default",
+  argTypes: {
+    default: {
+      control: "text",
+      description: "default slot",
+      defaultValue: "Submit",
+    },
+    disabled: {
+      control: "boolean",
+      description: "button attribute",
+      defaultValue: false,
+    },
+    outline: {
+      control: "boolean",
+      description: "outline style for button",
+      defaultValue: false,
+    },
+    small: {
+      control: "boolean",
+      description: "small style for button",
+      defaultValue: false,
+    },
+    large: {
+      control: "boolean",
+      description: "large style for button",
+      defaultValue: false,
+    },
+  },
 };
 
 const Template = (args, { argTypes }) => ({
