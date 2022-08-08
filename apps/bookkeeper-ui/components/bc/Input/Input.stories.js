@@ -1,27 +1,20 @@
 export default {
   title: "base components / bc-input",
+  argTypes: {
+    disabled: { control: "boolean" },
+    errored: { control: "boolean" },
+  },
+  args: {
+    placeholder: "default data",
+  },
 };
 
 const Template = (_args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  template: '<bc-input v-bind="$props" placeholder="default data" />',
+  template: '<bc-input style="width: 320px;" v-bind="$props" />',
 });
 
 export const Default = Template.bind({});
-
-export const Tablet = Template.bind({});
-Tablet.parameters = {
-  viewport: {
-    defaultViewport: "tablet",
-  },
-};
-
-export const Mobile = Template.bind({});
-Mobile.parameters = {
-  viewport: {
-    defaultViewport: "mobile1",
-  },
-};
 
 export const Disabled = Template.bind({});
 Disabled.args = {

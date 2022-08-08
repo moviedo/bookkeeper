@@ -1,68 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`base components / bc-input Default smoke-test 2`] = `
-<input data-v-1a110ac2
+<input data-v-10e03f24
        type="text"
        class="default hover focus"
        placeholder="default data"
+       style="width: 320px;"
 >
 `;
 
 exports[`base components / bc-input Disabled smoke-test 2`] = `
-<input data-v-1a110ac2
+<input data-v-10e03f24
        type="text"
        class="default hover focus"
-       placeholder="default data"
        disabled="disabled"
+       placeholder="default data"
+       style="width: 320px;"
 >
 `;
 
 exports[`base components / bc-input ErrorDefault smoke-test 2`] = `
-<input data-v-1a110ac2
+<input data-v-10e03f24
        type="text"
        class="default hover focus"
-       placeholder="default data"
        errored="true"
+       placeholder="default data"
+       style="width: 320px;"
 >
 `;
 
 exports[`base components / bc-input ErrorFocus smoke-test 2`] = `
-<input data-v-1a110ac2
+<input data-v-10e03f24
        type="text"
        class="default hover focus"
-       placeholder="default data"
        errored="true"
+       placeholder="default data"
+       style="width: 320px;"
 >
 `;
 
 exports[`base components / bc-input Focus smoke-test 2`] = `
-<input data-v-1a110ac2
+<input data-v-10e03f24
        type="text"
        class="default hover focus"
        placeholder="default data"
+       style="width: 320px;"
 >
 `;
 
 exports[`base components / bc-input Hover smoke-test 2`] = `
-<input data-v-1a110ac2
+<input data-v-10e03f24
        type="text"
        class="default hover focus"
        placeholder="default data"
->
-`;
-
-exports[`base components / bc-input Mobile smoke-test 2`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
->
-`;
-
-exports[`base components / bc-input Tablet smoke-test 2`] = `
-<input data-v-1a110ac2
-       type="text"
-       class="default hover focus"
-       placeholder="default data"
+       style="width: 320px;"
 >
 `;
