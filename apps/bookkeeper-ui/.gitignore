@@ -2,14 +2,4 @@
 sw.*
 
 # Nuxt Storybook
-.nuxt-storybook/components/*
-.nuxt-storybook/layouts/*
-.nuxt-storybook/mixins/*
-.nuxt-storybook/storybook/*
-!.nuxt-storybook/storybook/test-runner.js
-.nuxt-storybook/vetur/*
-.nuxt-storybook/views/*
-.nuxt-storybook/*.js
-.nuxt-storybook/*.json
-.nuxt-storybook/*.html
-
+.nuxt-storybook
