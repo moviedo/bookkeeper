@@ -11,38 +11,37 @@ export enum Heading {
 
 export default Vue.extend({
   name: "BcHeading",
+  functional: true,
   props: {
     type: {
-      type: Object,
+      type: String,
       default: Heading.h1,
     } as PropOptions<Heading>,
   },
-  render(createElement): VNode {
-    const headingEl: Heading = this.$props.type;
+  render(createElement, { data, props, slots: Slots }): VNode {
+    const slots = Slots();
+    const headingEl: Heading = props.type;
     const heading = createElement(
       headingEl,
       {
+        ...data,
         class: [
           getTextSize(headingEl),
           getTestWeight(headingEl),
           "text-slate-800",
-          this.$slots.subtitle && !this.$slots.group ? "mb-2" : "",
+          slots?.subtitle && !slots?.group ? "mb-2" : "",
         ],
       },
-      this.$slots.default
+      slots?.default
     );
 
-    if (this.$slots.subtitle && !this.$slots.group) {
+    if (slots?.subtitle && !slots?.group) {
       return createElement("hgroup", [
         heading,
-        createElement(
-          "p",
-          { class: "text-base font-medium" },
-          this.$slots.subtitle
-        ),
+        createElement("p", { class: "text-base font-medium" }, slots?.subtitle),
       ]);
-    } else if (this.$slots.group) {
-      return createElement("hgroup", [heading, this.$slots.group]);
+    } else if (slots?.group) {
+      return createElement("hgroup", [heading, slots?.group]);
     }
 
     return heading;

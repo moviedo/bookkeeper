@@ -63,3 +63,8 @@ export const GroupedHeading = Template.bind({});
 GroupedHeading.args = {
   group: '<bc-heading type="h2">Heading 2</bc-heading>',
 };
+
+export const WithCustomAttr = Template.bind({});
+WithCustomAttr.args = {
+  group: '<bc-heading type="h2" style="color:red;">Heading 2</bc-heading>',
+};
