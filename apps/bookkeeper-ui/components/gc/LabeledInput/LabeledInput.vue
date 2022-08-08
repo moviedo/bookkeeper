@@ -1,8 +1,8 @@
 <template>
   <fieldset>
-    <bc-lable class="pl-px" :for="id">
+    <bc-label class="pl-px" :for="id">
       <slot name="label">Default Label</slot>
-    </bc-lable>
+    </bc-label>
 
     <bc-input :id="id" class="my-2" v-bind="$attrs" />
 
@@ -16,7 +16,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "GcLabeldInput",
+  name: "GcLabeledInput",
   inheritAttrs: false,
   props: {
     id: {

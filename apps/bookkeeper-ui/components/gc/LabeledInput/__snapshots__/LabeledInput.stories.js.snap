@@ -2,11 +2,11 @@
 
 exports[`grouped components / gc-labeled-input Default smoke-test 2`] = `
 <fieldset style="width: 320px;">
-  <bc-lable for="username"
-            class="pl-px"
+  <label class="text-base font-normal text-slate-600 pl-px"
+         for="username"
   >
     Username
-  </bc-lable>
+  </label>
   <input data-v-10e03f24
          type="text"
          class="default hover focus my-2"
@@ -40,11 +40,11 @@ exports[`grouped components / gc-labeled-input Default smoke-test 2`] = `
 
 exports[`grouped components / gc-labeled-input WithHint smoke-test 2`] = `
 <fieldset style="width: 320px;">
-  <bc-lable for="username"
-            class="pl-px"
+  <label class="text-base font-normal text-slate-600 pl-px"
+         for="username"
   >
     Username
-  </bc-lable>
+  </label>
   <input data-v-10e03f24
          type="text"
          class="default hover focus my-2"
