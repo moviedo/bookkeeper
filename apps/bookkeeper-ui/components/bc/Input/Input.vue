@@ -11,7 +11,7 @@ export default Vue.extend({
 
 <style scoped>
 .default {
-  @apply block w-full appearance-none rounded border-[1px] border-slate-300 px-4 py-[14px] text-base font-normal text-slate-800 placeholder-slate-400 caret-slate-900 md:w-80;
+  @apply block w-full appearance-none rounded border-[1px] border-slate-300 px-4 py-[14px] text-base font-normal text-slate-800 placeholder-slate-400 caret-slate-900;
 }
 
 .hover {
