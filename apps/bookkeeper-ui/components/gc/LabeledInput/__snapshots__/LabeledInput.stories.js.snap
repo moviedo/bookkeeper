@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`grouped components / gc-labeled-input Default smoke-test 2`] = `
-<fieldset>
+<fieldset style="width: 320px;">
   <bc-lable for="username"
             class="pl-px"
   >
     Username
   </bc-lable>
-  <input data-v-1a110ac2
+  <input data-v-10e03f24
          type="text"
          class="default hover focus my-2"
          id="username"
@@ -39,13 +39,13 @@ exports[`grouped components / gc-labeled-input Default smoke-test 2`] = `
 `;
 
 exports[`grouped components / gc-labeled-input WithHint smoke-test 2`] = `
-<fieldset>
+<fieldset style="width: 320px;">
   <bc-lable for="username"
             class="pl-px"
   >
     Username
   </bc-lable>
-  <input data-v-1a110ac2
+  <input data-v-10e03f24
          type="text"
          class="default hover focus my-2"
          id="username"

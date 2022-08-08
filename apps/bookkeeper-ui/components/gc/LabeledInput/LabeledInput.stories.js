@@ -10,7 +10,7 @@ export default {
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   template: `
-  <gc-labeled-input v-bind="$props.$attrs">
+  <gc-labeled-input style="width: 320px;" v-bind="$props.$attrs">
     <template #label>
       ${args.labelSlot}
     </template>
