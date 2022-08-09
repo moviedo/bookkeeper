@@ -1,11 +1,7 @@
 <template>
   <p class="text-sm font-normal" :class="style">
-    <ExclamationIcon
-      v-show="hasText"
-      class="inline h-5 w-5 pr-1"
-      aria-hidden="true"
-    />
-    <span ref="text"><slot /></span>
+    <ExclamationIcon class="inline h-5 w-5 pr-1" aria-hidden="true" />
+    <slot />
   </p>
 </template>
 
@@ -14,7 +10,7 @@ import Vue, { PropOptions } from "vue";
 
 import ExclamationIcon from "~/assets/icons/ExclamationIcon.svg?inline";
 
-enum HintType {
+export enum HintType {
   error = "error",
   warning = "warning",
 }
@@ -30,16 +26,10 @@ export default Vue.extend({
       default: HintType.error,
     } as PropOptions<HintType>,
   },
-  data: () => ({
-    hasText: false,
-  }),
   computed: {
     style(): HintType {
       return HintType[this.type];
     },
-  },
-  mounted() {
-    this.hasText = Boolean(this.$refs.text?.textContent);
   },
 });
 </script>

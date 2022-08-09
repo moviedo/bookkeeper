@@ -6,7 +6,7 @@
 
     <bc-input :id="id" class="my-2" v-bind="$attrs" />
 
-    <bc-hint class="pl-px">
+    <bc-hint v-if="hasHint" class="pl-px">
       <slot name="hint" />
     </bc-hint>
   </fieldset>
@@ -23,6 +23,12 @@ export default Vue.extend({
       type: String,
       required: true,
     },
+  },
+  data: () => ({
+    hasHint: false,
+  }),
+  mounted() {
+    this.hasHint = Boolean(this.$slots.hint);
   },
 });
 </script>

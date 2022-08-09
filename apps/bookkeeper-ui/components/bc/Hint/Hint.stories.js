@@ -1,3 +1,5 @@
+import { HintType } from "./Hint";
+
 export default {
   title: "base components / bc-hint",
   argTypes: {
@@ -6,7 +8,8 @@ export default {
     },
     type: {
       control: "select",
-      options: ["error", "warning"],
+      options: Object.keys(HintType),
+      defaultValue: "error",
     },
   },
 };
@@ -32,5 +35,3 @@ Warning.args = {
   ...Default.args,
   type: "warning",
 };
-
-export const Empty = Template.bind({});
